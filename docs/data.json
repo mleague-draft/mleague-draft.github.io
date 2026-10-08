@@ -4,7 +4,7 @@
  "owners": [
   {
    "name": "吉國",
-   "total": 275.1,
+   "total": 271.1,
    "players": [
     "渡辺 太",
     "岡田 紗佳",
@@ -12,6 +12,17 @@
     "鈴木 たろう"
    ],
    "rank": 1
+  },
+  {
+   "name": "渡邊",
+   "total": 147.6,
+   "players": [
+    "尻無濱 航",
+    "白鳥 翔",
+    "仲林 圭",
+    "日向 藍子"
+   ],
+   "rank": 2
   },
   {
    "name": "金城",
@@ -22,82 +33,71 @@
     "浅見 真紀",
     "鈴木 優"
    ],
-   "rank": 2
+   "rank": 3
   },
   {
    "name": "杉江",
-   "total": 124.7,
+   "total": 82.6,
    "players": [
     "瀬戸熊 直樹",
     "滝沢 和典",
     "瑞原 明奈",
     "三浦 智博"
    ],
-   "rank": 3
-  },
-  {
-   "name": "渡邊",
-   "total": 82.6,
-   "players": [
-    "尻無濱 航",
-    "仲林 圭",
-    "白鳥 翔",
-    "日向 藍子"
-   ],
    "rank": 4
   },
   {
-   "name": "蓮池",
-   "total": -8.4,
+   "name": "盛輔",
+   "total": 2.3,
    "players": [
-    "堀 慎吾",
-    "東城 りお",
-    "本田 朋広",
-    "鈴木 大介"
+    "内川 幸太郎",
+    "朝倉 康心",
+    "醍醐 大",
+    "伊達 朱里紗"
    ],
    "rank": 5
   },
   {
+   "name": "宏樹",
+   "total": -73.7,
+   "players": [
+    "中田 花奈",
+    "勝又 健志",
+    "二階堂 亜樹",
+    "HIRO 柴田"
+   ],
+   "rank": 6
+  },
+  {
    "name": "松井",
-   "total": -44.7,
+   "total": -86.9,
    "players": [
     "佐々木 寿人",
     "逢川 恵夢",
     "永井 孝典",
     "石井 一馬"
    ],
-   "rank": 6
-  },
-  {
-   "name": "宮下",
-   "total": -76.5,
-   "players": [
-    "松本 吉弘",
-    "園田 賢",
-    "佐野 ひなこ",
-    "竹内 元太"
-   ],
    "rank": 7
   },
   {
-   "name": "盛輔",
-   "total": -107.9,
+   "name": "宮下",
+   "total": -91.6,
    "players": [
-    "朝倉 康心",
-    "内川 幸太郎",
-    "醍醐 大",
-    "伊達 朱里紗"
+    "松本 吉弘",
+    "佐野 ひなこ",
+    "竹内 元太",
+    "園田 賢"
    ],
    "rank": 8
   },
   {
-   "name": "宏樹",
-   "total": -124.6,
+   "name": "蓮池",
+   "total": -116.5,
    "players": [
-    "中田 花奈",
-    "勝又 健志",
-    "二階堂 亜樹",
-    "HIRO 柴田"
+    "本田 朋広",
+    "堀 慎吾",
+    "東城 りお",
+    "鈴木 大介"
    ],
    "rank": 9
   }
@@ -107,13 +107,26 @@
    "name": "尻無濱 航",
    "team": "KADOKAWAサクラナイツ",
    "team_id": "T008",
-   "games": 5,
-   "points": 222.0,
-   "avg_rank": 1.4,
+   "games": 6,
+   "points": 234.2,
+   "avg_rank": 1.5,
    "top": 3,
    "last": 0,
    "owners": [
     "渡邊"
+   ]
+  },
+  {
+   "name": "渡辺 太",
+   "team": "赤坂ドリブンズ",
+   "team_id": "T001",
+   "games": 6,
+   "points": 218.6,
+   "avg_rank": 1.66,
+   "top": 4,
+   "last": 1,
+   "owners": [
+    "吉國"
    ]
   },
   {
@@ -127,19 +140,6 @@
    "last": 0,
    "owners": [
     "杉江"
-   ]
-  },
-  {
-   "name": "渡辺 太",
-   "team": "赤坂ドリブンズ",
-   "team_id": "T001",
-   "games": 5,
-   "points": 206.0,
-   "avg_rank": 1.6,
-   "top": 4,
-   "last": 1,
-   "owners": [
-    "吉國"
    ]
   },
   {
@@ -166,6 +166,19 @@
    "last": 2,
    "owners": [
     "松井"
+   ]
+  },
+  {
+   "name": "内川 幸太郎",
+   "team": "EX風林火山",
+   "team_id": "T002",
+   "games": 7,
+   "points": 129.2,
+   "avg_rank": 2.0,
+   "top": 2,
+   "last": 1,
+   "owners": [
+    "盛輔"
    ]
   },
   {
@@ -198,8 +211,8 @@
    "name": "松本 吉弘",
    "team": "渋谷ABEMAS",
    "team_id": "T004",
-   "games": 4,
-   "points": 71.9,
+   "games": 5,
+   "points": 77.7,
    "avg_rank": 2.0,
    "top": 2,
    "last": 1,
@@ -219,19 +232,6 @@
    "owners": []
   },
   {
-   "name": "堀 慎吾",
-   "team": "KADOKAWAサクラナイツ",
-   "team_id": "T008",
-   "games": 5,
-   "points": 56.8,
-   "avg_rank": 2.2,
-   "top": 3,
-   "last": 2,
-   "owners": [
-    "蓮池"
-   ]
-  },
-  {
    "name": "阿久津 翔太",
    "team": "KADOKAWAサクラナイツ",
    "team_id": "T008",
@@ -242,19 +242,6 @@
    "last": 0,
    "owners": [
     "金城"
-   ]
-  },
-  {
-   "name": "東城 りお",
-   "team": "BEAST X",
-   "team_id": "T010",
-   "games": 4,
-   "points": 44.1,
-   "avg_rank": 2.5,
-   "top": 1,
-   "last": 0,
-   "owners": [
-    "蓮池"
    ]
   },
   {
@@ -271,19 +258,6 @@
    ]
   },
   {
-   "name": "朝倉 康心",
-   "team": "U-NEXT Pirates",
-   "team_id": "T007",
-   "games": 5,
-   "points": 25.0,
-   "avg_rank": 2.4,
-   "top": 2,
-   "last": 1,
-   "owners": [
-    "盛輔"
-   ]
-  },
-  {
    "name": "浅見 真紀",
    "team": "赤坂ドリブンズ",
    "team_id": "T001",
@@ -297,29 +271,29 @@
    ]
   },
   {
-   "name": "内川 幸太郎",
-   "team": "EX風林火山",
-   "team_id": "T002",
-   "games": 5,
-   "points": 13.7,
-   "avg_rank": 2.4,
-   "top": 0,
+   "name": "朝倉 康心",
+   "team": "U-NEXT Pirates",
+   "team_id": "T007",
+   "games": 6,
+   "points": 19.7,
+   "avg_rank": 2.33,
+   "top": 2,
    "last": 1,
    "owners": [
     "盛輔"
    ]
   },
   {
-   "name": "本田 朋広",
-   "team": "TEAM RAIDEN / 雷電",
-   "team_id": "T006",
+   "name": "白鳥 翔",
+   "team": "渋谷ABEMAS",
+   "team_id": "T004",
    "games": 5,
-   "points": 11.2,
+   "points": 7.2,
    "avg_rank": 2.4,
    "top": 1,
-   "last": 0,
+   "last": 1,
    "owners": [
-    "蓮池"
+    "渡邊"
    ]
   },
   {
@@ -336,6 +310,32 @@
    ]
   },
   {
+   "name": "本田 朋広",
+   "team": "TEAM RAIDEN / 雷電",
+   "team_id": "T006",
+   "games": 6,
+   "points": 5.9,
+   "avg_rank": 2.33,
+   "top": 1,
+   "last": 0,
+   "owners": [
+    "蓮池"
+   ]
+  },
+  {
+   "name": "堀 慎吾",
+   "team": "KADOKAWAサクラナイツ",
+   "team_id": "T008",
+   "games": 6,
+   "points": 5.0,
+   "avg_rank": 2.5,
+   "top": 3,
+   "last": 3,
+   "owners": [
+    "蓮池"
+   ]
+  },
+  {
    "name": "勝又 健志",
    "team": "EX風林火山",
    "team_id": "T002",
@@ -349,29 +349,16 @@
    ]
   },
   {
-   "name": "下石 戟",
+   "name": "東城 りお",
    "team": "BEAST X",
    "team_id": "T010",
-   "games": 3,
-   "points": -8.6,
-   "avg_rank": 2.33,
-   "top": 0,
-   "last": 0,
+   "games": 5,
+   "points": -6.9,
+   "avg_rank": 2.8,
+   "top": 1,
+   "last": 1,
    "owners": [
-    "吉國"
-   ]
-  },
-  {
-   "name": "瑞原 明奈",
-   "team": "U-NEXT Pirates",
-   "team_id": "T007",
-   "games": 4,
-   "points": -11.5,
-   "avg_rank": 2.5,
-   "top": 0,
-   "last": 0,
-   "owners": [
-    "杉江"
+    "蓮池"
    ]
   },
   {
@@ -397,6 +384,19 @@
    "top": 1,
    "last": 1,
    "owners": []
+  },
+  {
+   "name": "下石 戟",
+   "team": "BEAST X",
+   "team_id": "T010",
+   "games": 4,
+   "points": -25.2,
+   "avg_rank": 2.5,
+   "top": 0,
+   "last": 0,
+   "owners": [
+    "吉國"
+   ]
   },
   {
    "name": "鈴木 たろう",
@@ -428,37 +428,24 @@
    "name": "黒沢 咲",
    "team": "TEAM RAIDEN / 雷電",
    "team_id": "T006",
-   "games": 4,
-   "points": -38.1,
-   "avg_rank": 2.75,
+   "games": 5,
+   "points": -52.7,
+   "avg_rank": 2.8,
    "top": 1,
    "last": 2,
    "owners": []
   },
   {
-   "name": "園田 賢",
-   "team": "赤坂ドリブンズ",
-   "team_id": "T001",
-   "games": 6,
-   "points": -39.6,
-   "avg_rank": 2.83,
-   "top": 1,
-   "last": 2,
-   "owners": [
-    "宮下"
-   ]
-  },
-  {
-   "name": "白鳥 翔",
-   "team": "渋谷ABEMAS",
-   "team_id": "T004",
-   "games": 4,
-   "points": -45.6,
-   "avg_rank": 2.75,
+   "name": "瑞原 明奈",
+   "team": "U-NEXT Pirates",
+   "team_id": "T007",
+   "games": 5,
+   "points": -53.6,
+   "avg_rank": 2.8,
    "top": 0,
    "last": 1,
    "owners": [
-    "渡邊"
+    "杉江"
    ]
   },
   {
@@ -498,6 +485,32 @@
    "last": 1,
    "owners": [
     "盛輔"
+   ]
+  },
+  {
+   "name": "園田 賢",
+   "team": "赤坂ドリブンズ",
+   "team_id": "T001",
+   "games": 7,
+   "points": -60.5,
+   "avg_rank": 2.85,
+   "top": 1,
+   "last": 2,
+   "owners": [
+    "宮下"
+   ]
+  },
+  {
+   "name": "HIRO 柴田",
+   "team": "EARTH JETS",
+   "team_id": "T011",
+   "games": 4,
+   "points": -64.6,
+   "avg_rank": 2.75,
+   "top": 1,
+   "last": 2,
+   "owners": [
+    "宏樹"
    ]
   },
   {
@@ -553,19 +566,6 @@
    ]
   },
   {
-   "name": "HIRO 柴田",
-   "team": "EARTH JETS",
-   "team_id": "T011",
-   "games": 3,
-   "points": -115.5,
-   "avg_rank": 3.33,
-   "top": 0,
-   "last": 2,
-   "owners": [
-    "宏樹"
-   ]
-  },
-  {
    "name": "鈴木 大介",
    "team": "BEAST X",
    "team_id": "T010",
@@ -579,19 +579,6 @@
    ]
   },
   {
-   "name": "石井 一馬",
-   "team": "EARTH JETS",
-   "team_id": "T011",
-   "games": 7,
-   "points": -128.5,
-   "avg_rank": 2.85,
-   "top": 1,
-   "last": 3,
-   "owners": [
-    "松井"
-   ]
-  },
-  {
    "name": "三浦 智博",
    "team": "EARTH JETS",
    "team_id": "T011",
@@ -602,6 +589,19 @@
    "last": 3,
    "owners": [
     "杉江"
+   ]
+  },
+  {
+   "name": "石井 一馬",
+   "team": "EARTH JETS",
+   "team_id": "T011",
+   "games": 8,
+   "points": -170.7,
+   "avg_rank": 3.0,
+   "top": 1,
+   "last": 4,
+   "owners": [
+    "松井"
    ]
   },
   {
@@ -826,6 +826,21 @@
     "盛輔": -107.9,
     "宏樹": -124.6
    }
+  },
+  {
+   "date": "2026-10-08",
+   "games": 208,
+   "totals": {
+    "吉國": 271.1,
+    "渡邊": 147.6,
+    "金城": 140.9,
+    "杉江": 82.6,
+    "盛輔": 2.3,
+    "宏樹": -73.7,
+    "松井": -86.9,
+    "宮下": -91.6,
+    "蓮池": -116.5
+   }
   }
  ],
  "settlement": {
@@ -842,17 +857,17 @@
     "total": 29000
    },
    {
-    "name": "金城",
+    "name": "渡邊",
     "rank": 20000,
     "yakuman": 0,
     "chombo": 0,
     "scandal": 0,
-    "mvp": -1000,
+    "mvp": 8000,
     "last": 0,
-    "total": 19000
+    "total": 28000
    },
    {
-    "name": "杉江",
+    "name": "金城",
     "rank": 10000,
     "yakuman": 0,
     "chombo": 0,
@@ -862,17 +877,17 @@
     "total": 9000
    },
    {
-    "name": "渡邊",
+    "name": "杉江",
     "rank": 5000,
     "yakuman": 0,
     "chombo": 0,
     "scandal": 0,
-    "mvp": 8000,
+    "mvp": -1000,
     "last": 0,
-    "total": 13000
+    "total": 4000
    },
    {
-    "name": "蓮池",
+    "name": "盛輔",
     "rank": 0,
     "yakuman": 0,
     "chombo": 0,
@@ -882,7 +897,7 @@
     "total": -1000
    },
    {
-    "name": "松井",
+    "name": "宏樹",
     "rank": -5000,
     "yakuman": 0,
     "chombo": 0,
@@ -892,7 +907,7 @@
     "total": -6000
    },
    {
-    "name": "宮下",
+    "name": "松井",
     "rank": -10000,
     "yakuman": 0,
     "chombo": 0,
@@ -902,7 +917,7 @@
     "total": -11000
    },
    {
-    "name": "盛輔",
+    "name": "宮下",
     "rank": -20000,
     "yakuman": 0,
     "chombo": 0,
@@ -912,7 +927,7 @@
     "total": -21000
    },
    {
-    "name": "宏樹",
+    "name": "蓮池",
     "rank": -30000,
     "yakuman": 0,
     "chombo": 0,
@@ -926,16 +941,16 @@
    {
     "date": "",
     "label": "MVP（暫定）",
-    "detail": "尻無濱 航 +222.0",
+    "detail": "尻無濱 航 +234.2",
     "effects": {
      "吉國": -1000,
      "金城": -1000,
      "杉江": -1000,
-     "蓮池": -1000,
-     "松井": -1000,
-     "宮下": -1000,
      "盛輔": -1000,
      "宏樹": -1000,
+     "松井": -1000,
+     "宮下": -1000,
+     "蓮池": -1000,
      "渡邊": 8000
     }
    },
@@ -947,5 +962,5 @@
    }
   ]
  },
- "updated_at": "2026-10-07 04:07"
+ "updated_at": "2026-10-09 04:30"
 }
