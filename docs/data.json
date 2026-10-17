@@ -924,95 +924,111 @@
    {
     "name": "吉國",
     "rank": 30000,
-    "yakuman": 0,
+    "yakuman": -1000,
     "chombo": 0,
     "scandal": 0,
     "mvp": -1000,
     "last": 0,
-    "total": 29000
+    "total": 28000
    },
    {
     "name": "金城",
     "rank": 20000,
-    "yakuman": 0,
+    "yakuman": -1000,
     "chombo": 0,
     "scandal": 0,
     "mvp": -1000,
     "last": 0,
-    "total": 19000
+    "total": 18000
    },
    {
     "name": "蓮池",
     "rank": 10000,
-    "yakuman": 0,
+    "yakuman": -1000,
     "chombo": 0,
     "scandal": 0,
     "mvp": -1000,
     "last": 0,
-    "total": 9000
+    "total": 8000
    },
    {
     "name": "杉江",
     "rank": 5000,
-    "yakuman": 0,
+    "yakuman": -1000,
     "chombo": 0,
     "scandal": 0,
     "mvp": 8000,
     "last": 0,
-    "total": 13000
+    "total": 12000
    },
    {
     "name": "盛輔",
     "rank": 0,
-    "yakuman": 0,
+    "yakuman": -1000,
     "chombo": 0,
     "scandal": 0,
     "mvp": -1000,
     "last": 0,
-    "total": -1000
+    "total": -2000
    },
    {
     "name": "渡邊",
     "rank": -5000,
-    "yakuman": 0,
+    "yakuman": 8000,
     "chombo": 0,
     "scandal": 0,
     "mvp": -1000,
     "last": 0,
-    "total": -6000
+    "total": 2000
    },
    {
     "name": "宏樹",
     "rank": -10000,
-    "yakuman": 0,
+    "yakuman": -1000,
     "chombo": 0,
     "scandal": 0,
     "mvp": -1000,
     "last": 0,
-    "total": -11000
+    "total": -12000
    },
    {
     "name": "松井",
     "rank": -20000,
-    "yakuman": 0,
+    "yakuman": -1000,
     "chombo": 0,
     "scandal": 0,
     "mvp": -1000,
     "last": 0,
-    "total": -21000
+    "total": -22000
    },
    {
     "name": "宮下",
     "rank": -30000,
-    "yakuman": 0,
+    "yakuman": -1000,
     "chombo": 0,
     "scandal": 0,
     "mvp": -1000,
     "last": 0,
-    "total": -31000
+    "total": -32000
    }
   ],
   "log": [
+   {
+    "date": "2026-10-16",
+    "label": "役満",
+    "detail": "尻無濱 航（国士無双ツモ）",
+    "effects": {
+     "吉國": -1000,
+     "金城": -1000,
+     "蓮池": -1000,
+     "杉江": -1000,
+     "盛輔": -1000,
+     "宏樹": -1000,
+     "松井": -1000,
+     "宮下": -1000,
+     "渡邊": 8000
+    }
+   },
    {
     "date": "",
     "label": "MVP（暫定）",
@@ -1037,5 +1053,5 @@
    }
   ]
  },
- "updated_at": "2026-10-17 02:42"
+ "updated_at": "2026-10-17 20:31"
 }
