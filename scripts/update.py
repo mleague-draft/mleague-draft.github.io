@@ -250,10 +250,19 @@ def main():
     settlement = settle(owners, players, events, picks.get("regular_season_finished", False))
 
     old = json.loads(DATA_PATH.read_text(encoding="utf-8")) if DATA_PATH.exists() else {}
-    history = old.get("history", []) if old.get("season_label") == picks["season_label"] else []
+    same_season = old.get("season_label") == picks["season_label"]
+    history = old.get("history", []) if same_season else []
 
     now = datetime.now(JST)
     total_games = sum(p["games"] for p in players)
+    old_games = sum(p.get("games", 0) for p in old.get("players", [])) if same_season else 0
+    # メンテナンス直後などに公式サイトが「表はあるが中身が全てゼロ」の状態で復帰することがある。
+    # そのまま書き出すと順位表がゼロで上書きされるため、前回より試合数が減っていたら中断する。
+    if total_games < old_games:
+        raise ValueError(
+            f"公式サイトの総試合数が前回より減っています ({old_games} → {total_games})。"
+            "メンテナンス等で成績が復旧していない可能性があるため docs/data.json は更新しません"
+        )
     # 試合は夜なので、正午より前の取得は前日の試合として記録する
     game_day = (now - timedelta(hours=12)).strftime("%Y-%m-%d")
     snapshot = {"date": game_day, "games": total_games, "totals": {o["name"]: o["total"] for o in owners}}
