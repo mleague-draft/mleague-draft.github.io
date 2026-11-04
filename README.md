@@ -3,7 +3,7 @@
 9人のオーナーがチーム関係なく4選手ずつ指名し、指名選手のレギュラーシーズン個人ポイントの合計を競うための集計ページ。
 順位賞と、役満・チョンボなどのボーナスによる収支も計算して表示する。
 
-- 成績は [M.LEAGUE公式 チーム成績表](https://m-league.jp/stats) から毎日自動取得
+- 成績は [M.LEAGUE公式 チーム成績表](https://m-league.jp/stats) の API (`/api/mleague/data?kind=stats`) から毎日自動取得
 - GitHub Actions(集計) + GitHub Pages(公開) で **費用0円**
 - 閲覧はURLを共有するだけ(スマホ対応)
 
@@ -13,7 +13,7 @@
 |---|---|
 | `picks.json` | オーナー名と指名選手 |
 | `events.json` | 役満・チョンボ・スキャンダルの記録(手入力) |
-| `scripts/update.py` | 公式サイトから取得して `docs/data.json` を作る(標準ライブラリのみ) |
+| `scripts/update.py` | 公式APIから取得して `docs/data.json` を作る(標準ライブラリのみ) |
 | `docs/index.html` | 表示ページ(順位表・推移グラフ・選手ランキング) |
 | `docs/data.json` | 集計結果と日ごとの推移(自動生成) |
 | `.github/workflows/update.yml` | 毎日 22:47〜7:47 JST に6回自動更新 |
@@ -99,5 +99,6 @@ python -m http.server 8000 -d docs
 ## 注意
 
 - 集計対象はレギュラーシーズンのみ(セミファイナル・ファイナルは含めない)
-- 公式サイトのHTML構造が変わると取得に失敗する(Actions失敗メールで気づける)。その場合は `parse_stats()` を修正
+- 公式APIの形式が変わると取得に失敗する(Actions失敗メールで気づける)。その場合は `parse_stats()` を修正。
+  2026-11-01に公式サイトがJS描画になりHTMLから成績が消えたため、同じAPIを直接読む方式に変更した
 - GitHubは**60日間リポジトリに更新がないと定期実行を自動停止**する。シーズン中は毎日コミットされるので問題ないが、オフシーズン明けは Actions タブで再有効化が必要な場合がある

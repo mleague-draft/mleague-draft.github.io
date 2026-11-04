@@ -1,14 +1,13 @@
 """Mリーグ公式サイトの個人成績を取得し、オーナーごとの合計ポイントを docs/data.json に書き出す。
 
 使い方:
-    python scripts/update.py                 # 公式サイトから取得
-    python scripts/update.py --html FILE     # 保存済みHTMLから集計(テスト用)
+    python scripts/update.py                 # 公式サイトのAPIから取得
+    python scripts/update.py --file FILE     # 保存済みAPI応答(JSON)から集計(テスト用)
 
 依存ライブラリなし(Python 3.9+ 標準ライブラリのみ)。
 """
 import argparse
 import difflib
-import html
 import json
 import re
 import sys
@@ -20,7 +19,9 @@ ROOT = Path(__file__).resolve().parent.parent
 PICKS_PATH = ROOT / "picks.json"
 EVENTS_PATH = ROOT / "events.json"
 DATA_PATH = ROOT / "docs" / "data.json"
-STATS_URL = "https://m-league.jp/stats/?season={season}"
+# 公式サイトは2026-11-01からJS描画になり、HTMLには0しか入っていない。
+# 画面が読んでいるこのAPIを直接使う(/stats ページの live-pages.js と同じURL)。
+STATS_API = "https://m-league.jp/api/mleague/data?kind=stats"
 JST = timezone(timedelta(hours=9))
 
 
@@ -30,47 +31,36 @@ def fetch(url):
         return res.read().decode("utf-8")
 
 
-def text_of(fragment):
-    s = html.unescape(re.sub(r"<[^>]+>", "", fragment))
-    return re.sub(r"\s+", " ", s).strip()
-
-
 def norm_name(name):
     return re.sub(r"[\s　]", "", name)
 
 
-def to_number(s):
-    s = s.replace("▲", "-").replace(",", "").replace("pt", "").replace("%", "").strip()
-    if s in ("", "-", "—"):
-        return 0.0
-    return float(s)
-
-
-def parse_stats(page):
-    if not re.search(r'aria-selected="true">\s*<span class="c-tab__label-main">Regular', page):
-        raise ValueError("レギュラーシーズンのタブが選択されたページではありません (stats_season を確認してください)")
+def parse_stats(doc, season_id):
+    season = doc.get("season") or {}
+    if season.get("id") != season_id:
+        raise ValueError(
+            f"公式APIのシーズンが picks.json の stats_season と違います "
+            f"(API: {season.get('id')} {season.get('name')} / picks.json: {season_id})"
+        )
+    if season.get("phase") != "regular":
+        raise ValueError(f"レギュラーシーズンではありません (phase: {season.get('phase')})")
 
     players = []
-    for m in re.finditer(r'<section class="p-stats__team[^"]*" id="(T\d+)"[^>]*>(.*?)</section>', page, re.S):
-        team_id, body = m.group(1), m.group(2)
-        team = text_of(re.search(r'<h2 class="p-stats__teamName">(.*?)</h2>', body, re.S).group(1))
-        rows = {}
-        for tr in re.findall(r"<tr>(.*?)</tr>", body, re.S):
-            label = text_of(re.search(r'<th scope="row">(.*?)</th>', tr, re.S).group(1))
-            rows[label] = [text_of(c) for c in re.findall(r'<(?:td|th scope="col")>(.*?)</(?:td|th)>', tr, re.S)]
-        for i, name in enumerate(rows["選手名"]):
+    for team in doc.get("stats", {}).get("teams", []):
+        metric = {m["name"]: m["values"] for m in team["metrics"]}
+        for i, name in enumerate(team["players"]):
             players.append({
                 "name": name,
-                "team": team,
-                "team_id": team_id,
-                "games": int(to_number(rows["試合数"][i])),
-                "points": round(to_number(rows["ポイント"][i]), 1),
-                "avg_rank": round(to_number(rows["平着"][i]), 2),
-                "top": int(to_number(rows["1位"][i])),
-                "last": int(to_number(rows["4位"][i])),
+                "team": team["team"],
+                "team_id": team["id"],
+                "games": int(metric["試合数"][i]),
+                "points": round(float(metric["ポイント"][i]), 1),
+                "avg_rank": round(float(metric["平着"][i]), 2),
+                "top": int(metric["1位"][i]),
+                "last": int(metric["4位"][i]),
             })
     if len(players) < 30:
-        raise ValueError(f"選手データが {len(players)} 人分しか取れませんでした。公式サイトの構造が変わった可能性があります")
+        raise ValueError(f"選手データが {len(players)} 人分しか取れませんでした。公式APIの形式が変わった可能性があります")
     return players
 
 
@@ -240,12 +230,12 @@ def settle(owners, players, events, final):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--html", help="公式サイトの代わりに読み込むHTMLファイル")
+    ap.add_argument("--file", help="公式APIの代わりに読み込むJSONファイル")
     args = ap.parse_args()
 
     picks = json.loads(PICKS_PATH.read_text(encoding="utf-8"))
-    page = Path(args.html).read_text(encoding="utf-8") if args.html else fetch(STATS_URL.format(season=picks["stats_season"]))
-    owners, players = aggregate(picks, parse_stats(page))
+    raw = Path(args.file).read_text(encoding="utf-8") if args.file else fetch(STATS_API)
+    owners, players = aggregate(picks, parse_stats(json.loads(raw), picks["stats_season"]))
     events = load_events(EVENTS_PATH, players)
     settlement = settle(owners, players, events, picks.get("regular_season_finished", False))
 
