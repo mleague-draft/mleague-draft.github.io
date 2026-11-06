@@ -4,18 +4,18 @@
  "owners": [
   {
    "name": "吉國",
-   "total": 456.7,
+   "total": 456.6,
    "players": [
     "岡田 紗佳",
     "渡辺 太",
-    "下石 戟",
-    "鈴木 たろう"
+    "鈴木 たろう",
+    "下石 戟"
    ],
    "rank": 1
   },
   {
    "name": "蓮池",
-   "total": 379.2,
+   "total": 385.5,
    "players": [
     "本田 朋広",
     "堀 慎吾",
@@ -23,17 +23,6 @@
     "鈴木 大介"
    ],
    "rank": 2
-  },
-  {
-   "name": "宏樹",
-   "total": 261.4,
-   "players": [
-    "HIRO 柴田",
-    "勝又 健志",
-    "中田 花奈",
-    "二階堂 亜樹"
-   ],
-   "rank": 3
   },
   {
    "name": "杉江",
@@ -44,11 +33,22 @@
     "瑞原 明奈",
     "三浦 智博"
    ],
+   "rank": 3
+  },
+  {
+   "name": "宏樹",
+   "total": 247.7,
+   "players": [
+    "HIRO 柴田",
+    "勝又 健志",
+    "中田 花奈",
+    "二階堂 亜樹"
+   ],
    "rank": 4
   },
   {
    "name": "金城",
-   "total": -48.4,
+   "total": 5.5,
    "players": [
     "多井 隆晴",
     "鈴木 優",
@@ -58,41 +58,41 @@
    "rank": 5
   },
   {
-   "name": "盛輔",
-   "total": -59.8,
+   "name": "渡邊",
+   "total": -67.7,
    "players": [
-    "醍醐 大",
-    "伊達 朱里紗",
-    "内川 幸太郎",
-    "朝倉 康心"
+    "仲林 圭",
+    "尻無濱 航",
+    "白鳥 翔",
+    "日向 藍子"
    ],
    "rank": 6
   },
   {
-   "name": "渡邊",
-   "total": -88.5,
+   "name": "盛輔",
+   "total": -148.4,
    "players": [
-    "尻無濱 航",
-    "仲林 圭",
-    "白鳥 翔",
-    "日向 藍子"
+    "醍醐 大",
+    "内川 幸太郎",
+    "伊達 朱里紗",
+    "朝倉 康心"
    ],
    "rank": 7
   },
   {
    "name": "宮下",
-   "total": -196.3,
+   "total": -221.6,
    "players": [
     "松本 吉弘",
     "佐野 ひなこ",
-    "竹内 元太",
-    "園田 賢"
+    "園田 賢",
+    "竹内 元太"
    ],
    "rank": 8
   },
   {
    "name": "松井",
-   "total": -330.1,
+   "total": -261.8,
    "players": [
     "佐々木 寿人",
     "逢川 恵夢",
@@ -159,9 +159,9 @@
    "name": "HIRO 柴田",
    "team": "EARTH JETS",
    "team_id": "T011",
-   "games": 14,
-   "points": 212.3,
-   "avg_rank": 2.07,
+   "games": 15,
+   "points": 191.3,
+   "avg_rank": 2.13,
    "top": 6,
    "last": 2,
    "owners": [
@@ -169,16 +169,16 @@
    ]
   },
   {
-   "name": "醍醐 大",
-   "team": "セガサミーフェニックス",
-   "team_id": "T005",
-   "games": 12,
-   "points": 145.0,
-   "avg_rank": 2.08,
-   "top": 3,
-   "last": 1,
+   "name": "仲林 圭",
+   "team": "U-NEXT Pirates",
+   "team_id": "T007",
+   "games": 14,
+   "points": 165.6,
+   "avg_rank": 2.14,
+   "top": 5,
+   "last": 2,
    "owners": [
-    "盛輔"
+    "渡邊"
    ]
   },
   {
@@ -208,19 +208,6 @@
    ]
   },
   {
-   "name": "仲林 圭",
-   "team": "U-NEXT Pirates",
-   "team_id": "T007",
-   "games": 12,
-   "points": 127.7,
-   "avg_rank": 2.17,
-   "top": 4,
-   "last": 2,
-   "owners": [
-    "渡邊"
-   ]
-  },
-  {
    "name": "多井 隆晴",
    "team": "渋谷ABEMAS",
    "team_id": "T004",
@@ -247,12 +234,25 @@
    ]
   },
   {
+   "name": "醍醐 大",
+   "team": "セガサミーフェニックス",
+   "team_id": "T005",
+   "games": 13,
+   "points": 99.5,
+   "avg_rank": 2.23,
+   "top": 3,
+   "last": 2,
+   "owners": [
+    "盛輔"
+   ]
+  },
+  {
    "name": "松本 吉弘",
    "team": "渋谷ABEMAS",
    "team_id": "T004",
-   "games": 15,
-   "points": 69.4,
-   "avg_rank": 2.2,
+   "games": 16,
+   "points": 91.1,
+   "avg_rank": 2.19,
    "top": 3,
    "last": 2,
    "owners": [
@@ -260,15 +260,17 @@
    ]
   },
   {
-   "name": "高宮 まり",
-   "team": "KONAMI 麻雀格闘倶楽部",
-   "team_id": "T003",
-   "games": 9,
-   "points": 53.2,
-   "avg_rank": 2.33,
-   "top": 2,
-   "last": 1,
-   "owners": []
+   "name": "勝又 健志",
+   "team": "EX風林火山",
+   "team_id": "T002",
+   "games": 13,
+   "points": 57.5,
+   "avg_rank": 2.23,
+   "top": 3,
+   "last": 2,
+   "owners": [
+    "宏樹"
+   ]
   },
   {
    "name": "東城 りお",
@@ -297,32 +299,6 @@
    ]
   },
   {
-   "name": "勝又 健志",
-   "team": "EX風林火山",
-   "team_id": "T002",
-   "games": 12,
-   "points": 50.2,
-   "avg_rank": 2.25,
-   "top": 3,
-   "last": 2,
-   "owners": [
-    "宏樹"
-   ]
-  },
-  {
-   "name": "下石 戟",
-   "team": "BEAST X",
-   "team_id": "T010",
-   "games": 12,
-   "points": 37.6,
-   "avg_rank": 2.42,
-   "top": 3,
-   "last": 3,
-   "owners": [
-    "吉國"
-   ]
-  },
-  {
    "name": "中田 花奈",
    "team": "BEAST X",
    "team_id": "T010",
@@ -336,6 +312,17 @@
    ]
   },
   {
+   "name": "高宮 まり",
+   "team": "KONAMI 麻雀格闘倶楽部",
+   "team_id": "T003",
+   "games": 10,
+   "points": 31.6,
+   "avg_rank": 2.4,
+   "top": 2,
+   "last": 1,
+   "owners": []
+  },
+  {
    "name": "鈴木 優",
    "team": "U-NEXT Pirates",
    "team_id": "T007",
@@ -346,6 +333,45 @@
    "last": 3,
    "owners": [
     "金城"
+   ]
+  },
+  {
+   "name": "鈴木 たろう",
+   "team": "赤坂ドリブンズ",
+   "team_id": "T001",
+   "games": 12,
+   "points": 8.9,
+   "avg_rank": 2.58,
+   "top": 3,
+   "last": 3,
+   "owners": [
+    "吉國"
+   ]
+  },
+  {
+   "name": "浅見 真紀",
+   "team": "赤坂ドリブンズ",
+   "team_id": "T001",
+   "games": 10,
+   "points": 3.4,
+   "avg_rank": 2.4,
+   "top": 3,
+   "last": 2,
+   "owners": [
+    "金城"
+   ]
+  },
+  {
+   "name": "下石 戟",
+   "team": "BEAST X",
+   "team_id": "T010",
+   "games": 13,
+   "points": -26.3,
+   "avg_rank": 2.54,
+   "top": 3,
+   "last": 4,
+   "owners": [
+    "吉國"
    ]
   },
   {
@@ -362,25 +388,12 @@
    ]
   },
   {
-   "name": "伊達 朱里紗",
-   "team": "KONAMI 麻雀格闘倶楽部",
-   "team_id": "T003",
-   "games": 11,
-   "points": -42.5,
-   "avg_rank": 2.55,
-   "top": 2,
-   "last": 4,
-   "owners": [
-    "盛輔"
-   ]
-  },
-  {
    "name": "鈴木 大介",
    "team": "BEAST X",
    "team_id": "T010",
-   "games": 11,
-   "points": -44.7,
-   "avg_rank": 2.73,
+   "games": 12,
+   "points": -38.4,
+   "avg_rank": 2.67,
    "top": 2,
    "last": 3,
    "owners": [
@@ -398,32 +411,6 @@
    "last": 3,
    "owners": [
     "宮下"
-   ]
-  },
-  {
-   "name": "浅見 真紀",
-   "team": "赤坂ドリブンズ",
-   "team_id": "T001",
-   "games": 9,
-   "points": -50.5,
-   "avg_rank": 2.56,
-   "top": 2,
-   "last": 2,
-   "owners": [
-    "金城"
-   ]
-  },
-  {
-   "name": "鈴木 たろう",
-   "team": "赤坂ドリブンズ",
-   "team_id": "T001",
-   "games": 11,
-   "points": -54.9,
-   "avg_rank": 2.73,
-   "top": 2,
-   "last": 3,
-   "owners": [
-    "吉國"
    ]
   },
   {
@@ -464,16 +451,16 @@
    "owners": []
   },
   {
-   "name": "竹内 元太",
-   "team": "セガサミーフェニックス",
-   "team_id": "T005",
-   "games": 14,
-   "points": -90.1,
-   "avg_rank": 2.64,
-   "top": 1,
-   "last": 2,
+   "name": "伊達 朱里紗",
+   "team": "KONAMI 麻雀格闘倶楽部",
+   "team_id": "T003",
+   "games": 12,
+   "points": -85.6,
+   "avg_rank": 2.67,
+   "top": 2,
+   "last": 5,
    "owners": [
-    "宮下"
+    "盛輔"
    ]
   },
   {
@@ -514,6 +501,19 @@
    ]
   },
   {
+   "name": "石井 一馬",
+   "team": "EARTH JETS",
+   "team_id": "T011",
+   "games": 15,
+   "points": -121.3,
+   "avg_rank": 2.67,
+   "top": 3,
+   "last": 5,
+   "owners": [
+    "松井"
+   ]
+  },
+  {
    "name": "園田 賢",
    "team": "赤坂ドリブンズ",
    "team_id": "T001",
@@ -522,6 +522,19 @@
    "avg_rank": 2.92,
    "top": 2,
    "last": 4,
+   "owners": [
+    "宮下"
+   ]
+  },
+  {
+   "name": "竹内 元太",
+   "team": "セガサミーフェニックス",
+   "team_id": "T005",
+   "games": 15,
+   "points": -137.1,
+   "avg_rank": 2.73,
+   "top": 1,
+   "last": 3,
    "owners": [
     "宮下"
    ]
@@ -543,26 +556,13 @@
    "name": "白鳥 翔",
    "team": "渋谷ABEMAS",
    "team_id": "T004",
-   "games": 8,
-   "points": -141.4,
-   "avg_rank": 2.88,
+   "games": 9,
+   "points": -158.5,
+   "avg_rank": 2.89,
    "top": 1,
    "last": 3,
    "owners": [
     "渡邊"
-   ]
-  },
-  {
-   "name": "石井 一馬",
-   "team": "EARTH JETS",
-   "team_id": "T011",
-   "games": 14,
-   "points": -180.8,
-   "avg_rank": 2.79,
-   "top": 2,
-   "last": 5,
-   "owners": [
-    "松井"
    ]
   },
   {
@@ -579,6 +579,19 @@
    ]
   },
   {
+   "name": "永井 孝典",
+   "team": "EX風林火山",
+   "team_id": "T002",
+   "games": 12,
+   "points": -209.6,
+   "avg_rank": 2.92,
+   "top": 1,
+   "last": 4,
+   "owners": [
+    "松井"
+   ]
+  },
+  {
    "name": "日向 藍子",
    "team": "渋谷ABEMAS",
    "team_id": "T004",
@@ -589,19 +602,6 @@
    "last": 3,
    "owners": [
     "渡邊"
-   ]
-  },
-  {
-   "name": "永井 孝典",
-   "team": "EX風林火山",
-   "team_id": "T002",
-   "games": 11,
-   "points": -218.4,
-   "avg_rank": 3.0,
-   "top": 1,
-   "last": 4,
-   "owners": [
-    "松井"
    ]
   },
   {
@@ -1036,6 +1036,21 @@
     "宮下": -196.3,
     "松井": -330.1
    }
+  },
+  {
+   "date": "2026-11-06",
+   "games": 480,
+   "totals": {
+    "吉國": 456.6,
+    "蓮池": 385.5,
+    "杉江": 251.4,
+    "宏樹": 247.7,
+    "金城": 5.5,
+    "渡邊": -67.7,
+    "盛輔": -148.4,
+    "宮下": -221.6,
+    "松井": -261.8
+   }
   }
  ],
  "settlement": {
@@ -1062,24 +1077,24 @@
     "total": 17000
    },
    {
-    "name": "宏樹",
-    "rank": 10000,
-    "yakuman": 9000,
-    "chombo": 0,
-    "scandal": 0,
-    "mvp": -1000,
-    "last": 0,
-    "total": 18000
-   },
-   {
     "name": "杉江",
-    "rank": 5000,
+    "rank": 10000,
     "yakuman": -2000,
     "chombo": 0,
     "scandal": 0,
     "mvp": 8000,
     "last": 0,
-    "total": 11000
+    "total": 16000
+   },
+   {
+    "name": "宏樹",
+    "rank": 5000,
+    "yakuman": 9000,
+    "chombo": 0,
+    "scandal": 0,
+    "mvp": -1000,
+    "last": 0,
+    "total": 13000
    },
    {
     "name": "金城",
@@ -1092,24 +1107,24 @@
     "total": -3000
    },
    {
-    "name": "盛輔",
-    "rank": -5000,
-    "yakuman": -4000,
-    "chombo": 0,
-    "scandal": 0,
-    "mvp": -1000,
-    "last": 0,
-    "total": -10000
-   },
-   {
     "name": "渡邊",
-    "rank": -10000,
+    "rank": -5000,
     "yakuman": 7000,
     "chombo": 0,
     "scandal": 0,
     "mvp": -1000,
     "last": 0,
-    "total": -4000
+    "total": 1000
+   },
+   {
+    "name": "盛輔",
+    "rank": -10000,
+    "yakuman": -4000,
+    "chombo": 0,
+    "scandal": 0,
+    "mvp": -1000,
+    "last": 0,
+    "total": -15000
    },
    {
     "name": "宮下",
@@ -1140,8 +1155,8 @@
     "effects": {
      "吉國": -1000,
      "蓮池": -1000,
-     "宏樹": -1000,
      "杉江": -1000,
+     "宏樹": -1000,
      "金城": -1000,
      "盛輔": -1000,
      "宮下": -1000,
@@ -1158,8 +1173,8 @@
      "蓮池": -1000,
      "杉江": -1000,
      "金城": -1000,
-     "盛輔": -3000,
      "渡邊": -1000,
+     "盛輔": -3000,
      "宮下": -1000,
      "松井": -1000,
      "宏樹": 10000
@@ -1174,8 +1189,8 @@
      "蓮池": -1000,
      "宏樹": -1000,
      "金城": -1000,
-     "盛輔": -1000,
      "渡邊": -1000,
+     "盛輔": -1000,
      "宮下": -1000,
      "松井": -1000,
      "杉江": 8000
@@ -1189,5 +1204,5 @@
    }
   ]
  },
- "updated_at": "2026-11-06 05:49"
+ "updated_at": "2026-11-07 05:06"
 }
